@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 20px 120px;
+    transition: .4s;
+    text-align: justify;
+}
+
+.wrapper.show {
+    padding-left: 300px;
+}
+
+.hamburger {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 70px;
+    color: black;
+    font-weight: bold;
+    line-height: 50px;
+    transition: .3s linear;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+aside {
+    position: absolute;
+    left: -300px;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: dimgray;
+    transition: .3s linear;
+}
+
+.fas {
+    display: none;
+}
+
+i.show {
+    display: block;
+}
+
+aside.show {
+    left: 0;
+}
